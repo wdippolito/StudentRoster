@@ -4,7 +4,7 @@
 using std::string;
 using std::cout;
 
-class student
+class Student
 {
 public:
 	const static int daysArraySize = 3;
@@ -17,16 +17,16 @@ private:
 	int daysToComplete[daysArraySize];
 	DegreeProgram degreeProgram;
 public:
-	student(); /*parameterless constructor to set default values*/
-	student(string studentID, string firstName, string lastName, string emailAddr, int age, int daysToComplete[], DegreeProgram degreeProgram); /*Full constructor*/
-	~student();/*destructor*/;
+	Student(); /*parameterless constructor to set default values*/
+	Student(string studentID, string firstName, string lastName, string emailAddr, int age, int daysToComplete[], DegreeProgram degreeProgram); /*Full constructor*/
+	~Student();/*destructor*/;
 
 	/*getters*/
 	string getID();
 	string getFirstName();
 	string getLastName();
 	string getEmailAddr();
-	int setAge();
+	int getAge();
 	int* getDays();
 	DegreeProgram getDegreeProgram();
 

@@ -1,7 +1,7 @@
 #pragma once
-#include "student.h"
+#include "Student.h"
 
-class roster
+class Roster
 {
 };
 
