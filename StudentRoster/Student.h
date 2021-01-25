@@ -1,8 +1,9 @@
 #pragma once
 #include "degree.h"
 #include <iostream>
-using std::string;
 using std::cout;
+using std::string;
+
 
 class Student
 {

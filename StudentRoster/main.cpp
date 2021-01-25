@@ -15,7 +15,14 @@ int main()
     };
 
     const int numStudents = 5;
-    roster classRoster;
+
+    Roster classRoster;
+    //classRoster.parse("A1,John,Smith,John1989@gm ail.com,20,30,35,40,SECURITY");
+   // classRoster.parse("A2,Suzan,Erickson,Erickson_1990@gmailcom,19,50,30,40,NETWORK");
+    Student newStudent;
+    newStudent.print();
+
+
     //Call Parse on each row of the string array to create a student object for each one
 
 
