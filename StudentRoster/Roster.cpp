@@ -87,6 +87,7 @@ void Roster::printAll()
 
 void Roster::printAverageDaysInCourse(string studentID)
 {
+
 }
 
 void Roster::printInvalidEmails()
