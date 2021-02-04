@@ -36,7 +36,7 @@ string Student::getLastName() {return this->lastName;}
 string Student::getEmailAddr() {return this->emailAddr;}
 int Student::getAge() {return this->age;}
 int* Student::getDays() { return this->daysToComplete;}
-DegreeProgram Student::getDegreeProgram() {	return DegreeProgram();}
+DegreeProgram Student::getDegreeProgram() {	return degreeProgram;}
 
 
 //Setters or Mutators
@@ -75,7 +75,7 @@ void Student::setDegreeProgram(DegreeProgram degree)
 	this->degreeProgram = degree;
 }
 
-//Prints this Students info 
+//Prints this Students info  change to this->getbooktype
 void Student::print()
 {
 	cout << studentID << "\t";
@@ -90,7 +90,8 @@ void Student::print()
 		cout << daysToComplete[i] << ", ";
 	}
 	cout << daysToComplete[daysArraySize - 1] << "} ";
-	cout << "Degree Program: " << degreeTypeStrings[degreeProgram];
+	cout << "Degree Program: " << degreeTypeStrings[degreeProgram] << "\n";
+
 
 
 }

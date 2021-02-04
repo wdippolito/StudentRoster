@@ -2,6 +2,8 @@
 #include "roster.h"
 
 
+
+
 int main()
 {
 
@@ -15,16 +17,35 @@ int main()
     };
 
     const int numStudents = 5;
+    
+    // Print out to the screen, via your application, the course title, the programming language used, your
+    //  WGU student ID, and name
+    cout << "\n****************************************************\n";
+    cout << "Scripting and Programming - Applications - C867\nC++\n#000579133\nWilliam Dippolito\n";
+    cout << "****************************************************\n\n";
 
     Roster classRoster;
-    //classRoster.parse("A1,John,Smith,John1989@gm ail.com,20,30,35,40,SECURITY");
-   // classRoster.parse("A2,Suzan,Erickson,Erickson_1990@gmailcom,19,50,30,40,NETWORK");
-    Student newStudent;
-    newStudent.print();
-
 
     //Call Parse on each row of the string array to create a student object for each one
+    for (string line: studentData)
+    {
+        classRoster.parse(line);
+    }
 
 
 
+    classRoster.printAll();
+    classRoster.printInvalidEmails();
+     
+    //loop through classRosterArray and for each element:
+   for (int i = 0; i < numStudents; i++) {
+        string ID = classRoster.classRosterArray[i]->getID();
+        cout << "Average Days: ";
+        classRoster.printAverageDaysInCourse(ID);
+    }
+
+    classRoster.printByDegreeProgram(SOFTWARE);
+    classRoster.remove("A3");
+    classRoster.printAll();
+    classRoster.remove("A3");
 }
